@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
-import "./App.css"
+// import "./App.css"
+import "./styles/mongo.css"
 
 
 // allow to send data from one mongodb to another mongodb
@@ -81,7 +82,6 @@ function Mongo() {
                 <div className="inputcontainer">
                   <label>Mongo URI:</label>
                   <textarea
-                    style={{ height: "100px" }}
                     value={mongoURI}
                     onChange={(e) => setMongoURI(e.target.value)}
                     required
@@ -96,19 +96,15 @@ function Mongo() {
                     required
                   />
                 </div>
-                <div className="inputcontainer">
-                  <label>Excel File:</label>
-                  <input type="file" accept=".xlsx, .xls" onChange={handleFileChange} required />
-                </div>
+
+                {/* make two of the same input fields */}
+
                 <button className="upload-btn" type="submit">
                   📤 Upload
                 </button>
               </form>
             </div>
 
-            {/* <button className="export-btn" onClick={handleExport}>
-              📥 Export to Excel
-            </button> */}
 
             {message && <p className="message">{message}</p>}
           </div>
