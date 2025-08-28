@@ -69,7 +69,7 @@ function Mongo() {
 
 
   return (
-        <div className="App">
+        <div className="background">
           <div className="container">
             <div className="content">
               <div className="left-section">
