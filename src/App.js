@@ -26,7 +26,7 @@ function App() {
         formdata.append("collectionName", collectionName);
 
         try {
-            const response = await axios.post("http://localhost:5000/upload", formdata, {
+            const response = await axios.post("https://import-export-tool-api.onrender.com/upload", formdata, {
                 headers: { "Content-Type": "multipart/form-data" },
             });
             setMessage(response.data.message);
@@ -42,7 +42,7 @@ function App() {
         }
 
         try {
-            const response = await axios.get("http://localhost:5000/export", {
+            const response = await axios.get("https://import-export-tool-api.onrender.com/export", {
                 params: { mongoURI, collectionName },
                 responseType: "blob", // Important for handling binary data
             });
