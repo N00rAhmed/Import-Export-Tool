@@ -10,9 +10,7 @@ function Navbar() {
         <h1>Datamorph</h1>
       </div>
       <ul className="nav-links">
-        <li><Link to="/">Home</Link></li>
-        <li><Link to="/mongo">Mongo-Mongo</Link></li>
-        <li><Link to="/mongosql">Mongo-SQL</Link></li>
+        {/* <li><Link to="/">Home</Link></li> */}
       </ul>
     </nav>
   );
