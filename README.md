@@ -6,7 +6,7 @@ This web app can import excel files into MongoDB and also export data from Mongo
 
 ## Instructions
 
-To run the server side follow the instructions in this repository: https://github.com/N00rAhmed/Import-Export-Tool-API and to run the frontend follow the instructions below.
+To run the server side follow the instructions in this repository https://github.com/N00rAhmed/Import-Export-Tool-API and to run the frontend follow the instructions below.
 
 Install dependencies:
 ```
